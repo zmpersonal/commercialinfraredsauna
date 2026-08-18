@@ -1,0 +1,30 @@
+name: Update commercial sauna index and deploy
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 9 * * 1'
+permissions:
+  contents: write
+concurrency:
+  group: commercial-sauna-data
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests
+      - name: Refresh Census and EIA data
+        env:
+          EIA_API_KEY: ${{ secrets.EIA_API_KEY }}
+        run: python scripts/update_data.py
+      - name: Commit refreshed data and trigger Pages deployment
+        run: |
+          git config user.name "commercial-sauna-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add .
+          git diff --cached --quiet || git commit -m "Refresh commercial sauna index"
+          git push
