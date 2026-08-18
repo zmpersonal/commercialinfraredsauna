@@ -1,0 +1,52 @@
+rank,state_code,state_name,opportunity_score,commercial_rate_cents,fitness_establishments,fitness_establishments_per_100k,median_household_income,population,rate_period,acs_year,cbp_year
+1,AL,Alabama,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+2,AK,Alaska,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+3,AZ,Arizona,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+4,AR,Arkansas,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+5,CA,California,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+6,CO,Colorado,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+7,CT,Connecticut,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+8,DE,Delaware,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+9,DC,District of Columbia,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+10,FL,Florida,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+11,GA,Georgia,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+12,HI,Hawaii,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+13,ID,Idaho,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+14,IL,Illinois,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+15,IN,Indiana,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+16,IA,Iowa,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+17,KS,Kansas,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+18,KY,Kentucky,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+19,LA,Louisiana,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+20,ME,Maine,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+21,MD,Maryland,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+22,MA,Massachusetts,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+23,MI,Michigan,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+24,MN,Minnesota,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+25,MS,Mississippi,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+26,MO,Missouri,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+27,MT,Montana,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+28,NE,Nebraska,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+29,NV,Nevada,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+30,NH,New Hampshire,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+31,NJ,New Jersey,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+32,NM,New Mexico,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+33,NY,New York,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+34,NC,North Carolina,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+35,ND,North Dakota,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+36,OH,Ohio,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+37,OK,Oklahoma,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+38,OR,Oregon,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+39,PA,Pennsylvania,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+40,RI,Rhode Island,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+41,SC,South Carolina,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+42,SD,South Dakota,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+43,TN,Tennessee,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+44,TX,Texas,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+45,UT,Utah,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+46,VT,Vermont,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+47,VA,Virginia,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+48,WA,Washington,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+49,WV,West Virginia,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+50,WI,Wisconsin,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter
+51,WY,Wyoming,50.0,13.0,900,18.0,75000,5000000,starter,starter,starter

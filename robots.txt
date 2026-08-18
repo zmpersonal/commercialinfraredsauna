@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://commercialinfraredsauna.com/sitemap.xml
