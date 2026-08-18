@@ -1,8 +1,16 @@
 {
   "metadata": {
-    "updated_at": "",
+    "updated_at": "2026-08-18T22:56:40.886045+00:00",
     "live": false,
-    "note": "Starter values only; run updater for official current data."
+    "note": "Starter values only; run updater for official current data.",
+    "acs_year": null,
+    "cbp_year": null,
+    "eia_period": null,
+    "sources": {
+      "acs": "U.S. Census Bureau ACS 5-Year",
+      "cbp": "U.S. Census Bureau County Business Patterns",
+      "eia": "U.S. EIA Electricity Retail Sales"
+    }
   },
   "states": [
     {
