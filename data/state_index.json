@@ -1,15 +1,20 @@
 {
   "metadata": {
-    "updated_at": "2026-08-19T00:37:17.949000+00:00",
-    "live": false,
+    "updated_at": "2026-08-19T00:53:04.208835+00:00",
+    "live": true,
     "note": "Starter values only; run updater for official current data.",
-    "acs_year": null,
-    "cbp_year": null,
+    "acs_year": 2024,
+    "cbp_year": 2023,
     "eia_period": "2026-05",
     "sources": {
       "acs": "U.S. Census Bureau ACS 5-Year",
       "cbp": "U.S. Census Bureau County Business Patterns",
       "eia": "U.S. EIA Electricity Retail Sales"
+    },
+    "source_status": {
+      "acs": "live",
+      "cbp": "live",
+      "eia": "live"
     }
   },
   "states": [
@@ -19,12 +24,12 @@
       "fips": "01",
       "commercial_rate_cents": 14.51,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 495,
+      "fitness_establishments_per_100k": 9.73,
+      "median_household_income": 63999,
+      "population": 5086768,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "AK",
@@ -32,12 +37,12 @@
       "fips": "02",
       "commercial_rate_cents": 23.71,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 91,
+      "fitness_establishments_per_100k": 12.37,
+      "median_household_income": 92788,
+      "population": 735706,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "AZ",
@@ -45,12 +50,12 @@
       "fips": "04",
       "commercial_rate_cents": 12.15,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 813,
+      "fitness_establishments_per_100k": 11.02,
+      "median_household_income": 79964,
+      "population": 7378838,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "AR",
@@ -58,12 +63,12 @@
       "fips": "05",
       "commercial_rate_cents": 11.9,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 257,
+      "fitness_establishments_per_100k": 8.43,
+      "median_household_income": 60773,
+      "population": 3049391,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "CA",
@@ -71,12 +76,12 @@
       "fips": "06",
       "commercial_rate_cents": 24.1,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 5371,
+      "fitness_establishments_per_100k": 13.67,
+      "median_household_income": 99122,
+      "population": 39287377,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "CO",
@@ -84,12 +89,12 @@
       "fips": "08",
       "commercial_rate_cents": 13.13,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 972,
+      "fitness_establishments_per_100k": 16.58,
+      "median_household_income": 95470,
+      "population": 5862189,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "CT",
@@ -97,12 +102,12 @@
       "fips": "09",
       "commercial_rate_cents": 21.08,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 578,
+      "fitness_establishments_per_100k": 15.95,
+      "median_household_income": 95781,
+      "population": 3624508,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "DE",
@@ -110,12 +115,12 @@
       "fips": "10",
       "commercial_rate_cents": 13.39,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 170,
+      "fitness_establishments_per_100k": 16.65,
+      "median_household_income": 84954,
+      "population": 1021191,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "DC",
@@ -123,12 +128,12 @@
       "fips": "11",
       "commercial_rate_cents": 23.42,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 121,
+      "fitness_establishments_per_100k": 17.76,
+      "median_household_income": 109870,
+      "population": 681294,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "FL",
@@ -136,12 +141,12 @@
       "fips": "12",
       "commercial_rate_cents": 11.49,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 2791,
+      "fitness_establishments_per_100k": 12.45,
+      "median_household_income": 74568,
+      "population": 22416077,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "GA",
@@ -149,12 +154,12 @@
       "fips": "13",
       "commercial_rate_cents": 10.88,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 1186,
+      "fitness_establishments_per_100k": 10.84,
+      "median_household_income": 77353,
+      "population": 10940407,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "HI",
@@ -162,12 +167,12 @@
       "fips": "15",
       "commercial_rate_cents": 46.19,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 99,
+      "fitness_establishments_per_100k": 6.85,
+      "median_household_income": 100389,
+      "population": 1445235,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "ID",
@@ -175,12 +180,12 @@
       "fips": "16",
       "commercial_rate_cents": 9.34,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 233,
+      "fitness_establishments_per_100k": 12.05,
+      "median_household_income": 77800,
+      "population": 1934262,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "IL",
@@ -188,12 +193,12 @@
       "fips": "17",
       "commercial_rate_cents": 15.36,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 1621,
+      "fitness_establishments_per_100k": 12.77,
+      "median_household_income": 83390,
+      "population": 12694798,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "IN",
@@ -201,12 +206,12 @@
       "fips": "18",
       "commercial_rate_cents": 13.88,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 739,
+      "fitness_establishments_per_100k": 10.79,
+      "median_household_income": 71957,
+      "population": 6851073,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "IA",
@@ -214,12 +219,12 @@
       "fips": "19",
       "commercial_rate_cents": 10.58,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 398,
+      "fitness_establishments_per_100k": 12.4,
+      "median_household_income": 75059,
+      "population": 3210507,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "KS",
@@ -227,12 +232,12 @@
       "fips": "20",
       "commercial_rate_cents": 11.19,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 302,
+      "fitness_establishments_per_100k": 10.25,
+      "median_household_income": 74275,
+      "population": 2947197,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "KY",
@@ -240,12 +245,12 @@
       "fips": "21",
       "commercial_rate_cents": 13.09,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 390,
+      "fitness_establishments_per_100k": 8.6,
+      "median_household_income": 63726,
+      "population": 4534824,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "LA",
@@ -253,12 +258,12 @@
       "fips": "22",
       "commercial_rate_cents": 11.98,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 509,
+      "fitness_establishments_per_100k": 11.04,
+      "median_household_income": 60756,
+      "population": 4611961,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "ME",
@@ -266,12 +271,12 @@
       "fips": "23",
       "commercial_rate_cents": 23.05,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 189,
+      "fitness_establishments_per_100k": 13.62,
+      "median_household_income": 74733,
+      "population": 1387817,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "MD",
@@ -279,12 +284,12 @@
       "fips": "24",
       "commercial_rate_cents": 16.4,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 704,
+      "fitness_establishments_per_100k": 11.34,
+      "median_household_income": 103678,
+      "population": 6206011,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "MA",
@@ -292,12 +297,12 @@
       "fips": "25",
       "commercial_rate_cents": 24.07,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 1230,
+      "fitness_establishments_per_100k": 17.46,
+      "median_household_income": 103960,
+      "population": 7044056,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "MI",
@@ -305,12 +310,12 @@
       "fips": "26",
       "commercial_rate_cents": 16.09,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 930,
+      "fitness_establishments_per_100k": 9.23,
+      "median_household_income": 72875,
+      "population": 10077761,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "MN",
@@ -318,12 +323,12 @@
       "fips": "27",
       "commercial_rate_cents": 12.88,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 748,
+      "fitness_establishments_per_100k": 13.03,
+      "median_household_income": 89062,
+      "population": 5739445,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "MS",
@@ -331,12 +336,12 @@
       "fips": "28",
       "commercial_rate_cents": 13.82,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 255,
+      "fitness_establishments_per_100k": 8.65,
+      "median_household_income": 56447,
+      "population": 2946779,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "MO",
@@ -344,12 +349,12 @@
       "fips": "29",
       "commercial_rate_cents": 10.25,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 697,
+      "fitness_establishments_per_100k": 11.26,
+      "median_household_income": 70702,
+      "population": 6191814,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "MT",
@@ -357,12 +362,12 @@
       "fips": "30",
       "commercial_rate_cents": 13.24,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 215,
+      "fitness_establishments_per_100k": 19.25,
+      "median_household_income": 72509,
+      "population": 1116875,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "NE",
@@ -370,12 +375,12 @@
       "fips": "31",
       "commercial_rate_cents": 8.36,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 304,
+      "fitness_establishments_per_100k": 15.36,
+      "median_household_income": 76475,
+      "population": 1978707,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "NV",
@@ -383,12 +388,12 @@
       "fips": "32",
       "commercial_rate_cents": 9.06,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 345,
+      "fitness_establishments_per_100k": 10.83,
+      "median_household_income": 78260,
+      "population": 3184612,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "NH",
@@ -396,12 +401,12 @@
       "fips": "33",
       "commercial_rate_cents": 20.59,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 292,
+      "fitness_establishments_per_100k": 20.93,
+      "median_household_income": 99031,
+      "population": 1394868,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "NJ",
@@ -409,12 +414,12 @@
       "fips": "34",
       "commercial_rate_cents": 17.86,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 1495,
+      "fitness_establishments_per_100k": 16.0,
+      "median_household_income": 103556,
+      "population": 9343809,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "NM",
@@ -422,12 +427,12 @@
       "fips": "35",
       "commercial_rate_cents": 10.18,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 201,
+      "fitness_establishments_per_100k": 9.48,
+      "median_household_income": 64059,
+      "population": 2120246,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "NY",
@@ -435,12 +440,12 @@
       "fips": "36",
       "commercial_rate_cents": 22.4,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 2498,
+      "fitness_establishments_per_100k": 12.58,
+      "median_household_income": 85974,
+      "population": 19852366,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "NC",
@@ -448,12 +453,12 @@
       "fips": "37",
       "commercial_rate_cents": 10.44,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 1415,
+      "fitness_establishments_per_100k": 13.19,
+      "median_household_income": 72388,
+      "population": 10730404,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "ND",
@@ -461,12 +466,12 @@
       "fips": "38",
       "commercial_rate_cents": 7.38,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 112,
+      "fitness_establishments_per_100k": 14.27,
+      "median_household_income": 76657,
+      "population": 784841,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "OH",
@@ -474,12 +479,12 @@
       "fips": "39",
       "commercial_rate_cents": 13.89,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 1294,
+      "fitness_establishments_per_100k": 10.96,
+      "median_household_income": 71389,
+      "population": 11810293,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "OK",
@@ -487,12 +492,12 @@
       "fips": "40",
       "commercial_rate_cents": 8.1,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 410,
+      "fitness_establishments_per_100k": 10.18,
+      "median_household_income": 65039,
+      "population": 4028634,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "OR",
@@ -500,12 +505,12 @@
       "fips": "41",
       "commercial_rate_cents": 10.61,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 555,
+      "fitness_establishments_per_100k": 13.05,
+      "median_household_income": 83011,
+      "population": 4254293,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "PA",
@@ -513,12 +518,12 @@
       "fips": "42",
       "commercial_rate_cents": 13.56,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 1637,
+      "fitness_establishments_per_100k": 12.57,
+      "median_household_income": 77971,
+      "population": 13018639,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "RI",
@@ -526,12 +531,12 @@
       "fips": "44",
       "commercial_rate_cents": 25.41,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 178,
+      "fitness_establishments_per_100k": 16.16,
+      "median_household_income": 87796,
+      "population": 1101801,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "SC",
@@ -539,12 +544,12 @@
       "fips": "45",
       "commercial_rate_cents": 11.57,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 574,
+      "fitness_establishments_per_100k": 10.84,
+      "median_household_income": 69324,
+      "population": 5296225,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "SD",
@@ -552,12 +557,12 @@
       "fips": "46",
       "commercial_rate_cents": 11.78,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 114,
+      "fitness_establishments_per_100k": 12.56,
+      "median_household_income": 75081,
+      "population": 907428,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "TN",
@@ -565,12 +570,12 @@
       "fips": "47",
       "commercial_rate_cents": 13.52,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 786,
+      "fitness_establishments_per_100k": 11.12,
+      "median_household_income": 69595,
+      "population": 7066383,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "TX",
@@ -578,12 +583,12 @@
       "fips": "48",
       "commercial_rate_cents": 8.26,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 3465,
+      "fitness_establishments_per_100k": 11.48,
+      "median_household_income": 78476,
+      "population": 30188424,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "UT",
@@ -591,12 +596,12 @@
       "fips": "49",
       "commercial_rate_cents": 10.57,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 367,
+      "fitness_establishments_per_100k": 10.82,
+      "median_household_income": 95166,
+      "population": 3392331,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "VT",
@@ -604,12 +609,12 @@
       "fips": "50",
       "commercial_rate_cents": 21.47,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 92,
+      "fitness_establishments_per_100k": 14.22,
+      "median_household_income": 81203,
+      "population": 647106,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "VA",
@@ -617,12 +622,12 @@
       "fips": "51",
       "commercial_rate_cents": 10.84,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 1220,
+      "fitness_establishments_per_100k": 14.01,
+      "median_household_income": 93170,
+      "population": 8705170,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "WA",
@@ -630,12 +635,12 @@
       "fips": "53",
       "commercial_rate_cents": 11.72,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 1054,
+      "fitness_establishments_per_100k": 13.48,
+      "median_household_income": 98141,
+      "population": 7816116,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "WV",
@@ -643,12 +648,12 @@
       "fips": "54",
       "commercial_rate_cents": 12.11,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 118,
+      "fitness_establishments_per_100k": 6.64,
+      "median_household_income": 59608,
+      "population": 1778373,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "WI",
@@ -656,12 +661,12 @@
       "fips": "55",
       "commercial_rate_cents": 13.68,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 836,
+      "fitness_establishments_per_100k": 14.13,
+      "median_household_income": 77485,
+      "population": 5914872,
+      "acs_year": 2024,
+      "cbp_year": 2023
     },
     {
       "state_code": "WY",
@@ -669,12 +674,12 @@
       "fips": "56",
       "commercial_rate_cents": 9.54,
       "rate_period": "2026-05",
-      "fitness_establishments": 900,
-      "fitness_establishments_per_100k": 18.0,
-      "median_household_income": 75000,
-      "population": 5000000,
-      "acs_year": "starter",
-      "cbp_year": "starter"
+      "fitness_establishments": 90,
+      "fitness_establishments_per_100k": 15.45,
+      "median_household_income": 76176,
+      "population": 582397,
+      "acs_year": 2024,
+      "cbp_year": 2023
     }
   ]
 }
