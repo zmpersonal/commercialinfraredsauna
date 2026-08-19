@@ -1,27 +1,83 @@
-name: Deploy GitHub Pages
+name: Update commercial sauna index and deploy
+
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: '23 9 * * 1'
+
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
+
 concurrency:
-  group: pages
-  cancel-in-progress: true
+  group: commercial-sauna-data
+  cancel-in-progress: false
+
 jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    env:
+      EIA_API_KEY: ${{ secrets.EIA_API_KEY }}
+      CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Verify API secrets
+        run: |
+          test -n "$EIA_API_KEY" || (echo "::error::Missing repository secret EIA_API_KEY" && exit 1)
+          test -n "$CENSUS_API_KEY" || (echo "::error::Missing repository secret CENSUS_API_KEY" && exit 1)
+          echo "Both required API secrets are present."
+
+      - name: Refresh Census and EIA data
+        run: python scripts/update_data.py
+
+      - name: Show refreshed metadata
+        run: |
+          python - <<'PY'
+          import json
+          with open('data/state_index.json') as f:
+              o = json.load(f)
+          print(json.dumps(o['metadata'], indent=2))
+          print('Sample state:', o['states'][0])
+          PY
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name "commercial-sauna-data-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add .
+          git diff --cached --quiet || git commit -m "Refresh commercial sauna index"
+          git push
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload refreshed site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: '.'
+
   deploy:
+    needs: update
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v6
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v4
-        with:
-          path: .
-      - name: Deploy
+      - name: Deploy refreshed site to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
