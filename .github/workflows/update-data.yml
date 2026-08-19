@@ -7,6 +7,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: commercial-sauna-data
@@ -17,19 +19,21 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
-    # Make both repository secrets available to every step in this job.
     env:
       EIA_API_KEY: ${{ secrets.EIA_API_KEY }}
       CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
 
     steps:
-      - uses: actions/checkout@v6
+      - name: Checkout
+        uses: actions/checkout@v6
 
-      - uses: actions/setup-python@v5
+      - name: Set up Python
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
-      - run: pip install requests
+      - name: Install dependencies
+        run: pip install requests
 
       - name: Verify API secrets
         run: |
@@ -47,13 +51,33 @@ jobs:
           with open('data/state_index.json') as f:
               o = json.load(f)
           print(json.dumps(o['metadata'], indent=2))
-          print('Sample:', o['states'][0])
+          print('Sample state:', o['states'][0])
           PY
 
-      - name: Commit refreshed data and trigger Pages deployment
+      - name: Commit refreshed data
         run: |
           git config user.name "commercial-sauna-data-bot"
           git config user.email "actions@users.noreply.github.com"
           git add .
           git diff --cached --quiet || git commit -m "Refresh commercial sauna index"
           git push
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload refreshed site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: '.'
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy refreshed site to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
