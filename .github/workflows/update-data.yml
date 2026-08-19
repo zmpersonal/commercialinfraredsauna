@@ -1,26 +1,55 @@
 name: Update commercial sauna index and deploy
+
 on:
   workflow_dispatch:
   schedule:
     - cron: '23 9 * * 1'
+
 permissions:
   contents: write
+
 concurrency:
   group: commercial-sauna-data
   cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    # Make both repository secrets available to every step in this job.
+    env:
+      EIA_API_KEY: ${{ secrets.EIA_API_KEY }}
+      CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
+
     steps:
       - uses: actions/checkout@v6
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
       - run: pip install requests
+
+      - name: Verify API secrets
+        run: |
+          test -n "$EIA_API_KEY" || (echo "::error::Missing repository secret EIA_API_KEY" && exit 1)
+          test -n "$CENSUS_API_KEY" || (echo "::error::Missing repository secret CENSUS_API_KEY" && exit 1)
+          echo "Both required API secrets are present."
+
       - name: Refresh Census and EIA data
-        env:
-          EIA_API_KEY: ${{ secrets.EIA_API_KEY }}
         run: python scripts/update_data.py
+
+      - name: Show refreshed metadata
+        run: |
+          python - <<'PY'
+          import json
+          with open('data/state_index.json') as f:
+              o = json.load(f)
+          print(json.dumps(o['metadata'], indent=2))
+          print('Sample:', o['states'][0])
+          PY
+
       - name: Commit refreshed data and trigger Pages deployment
         run: |
           git config user.name "commercial-sauna-data-bot"
