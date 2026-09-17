@@ -38,8 +38,7 @@ jobs:
       - name: Verify API secrets
         run: |
           test -n "$EIA_API_KEY" || (echo "::error::Missing repository secret EIA_API_KEY" && exit 1)
-          test -n "$CENSUS_API_KEY" || (echo "::error::Missing repository secret CENSUS_API_KEY" && exit 1)
-          echo "Both required API secrets are present."
+          echo "EIA key present. Census key is optional."
 
       - name: Refresh Census and EIA data
         run: python scripts/update_data.py
