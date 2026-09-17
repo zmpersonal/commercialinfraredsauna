@@ -25,13 +25,13 @@ def require_secret(name):
         raise RuntimeError(f'{name} is not set. Add it under Settings > Secrets and variables > Actions.')
     return value
 
-def acs_latest(census_key):
+def acs_latest(census_key=None):
     errors=[]
     for year in (2024, 2023):
         try:
             j = get_json(
                 f'https://api.census.gov/data/{year}/acs/acs5',
-                {'get':'NAME,B01003_001E,B19013_001E','for':'state:*','key':census_key}
+                {k:v for k,v in {'get':'NAME,B01003_001E,B19013_001E','for':'state:*','key':census_key}.items() if v}
             )
             head=j[0]; out={}
             for row in j[1:]:
@@ -47,14 +47,14 @@ def acs_latest(census_key):
             errors.append(f'{year}: {e}')
     raise RuntimeError('ACS refresh failed. ' + ' | '.join(errors))
 
-def cbp_latest(census_key):
+def cbp_latest(census_key=None):
     # 2023 is the latest published CBP vintage as of this build. The API example for 2023 uses NAICS2017.
     errors=[]
     for year, naics_var in ((2023,'NAICS2017'), (2022,'NAICS2017')):
         try:
             j = get_json(
                 f'https://api.census.gov/data/{year}/cbp',
-                {'get':f'NAME,ESTAB,{naics_var},LFO','for':'state:*',naics_var:'713940','key':census_key}
+                {k:v for k,v in {'get':f'NAME,ESTAB,{naics_var},LFO','for':'state:*',naics_var:'713940','key':census_key}.items() if v}
             )
             head=j[0]; by_state={}
             for row in j[1:]:
@@ -102,7 +102,7 @@ def eia_rates(eia_key):
     return out, max(periods.values())
 
 def main():
-    census_key=require_secret('CENSUS_API_KEY')
+    census_key=os.getenv('CENSUS_API_KEY','').strip() or None
     eia_key=require_secret('EIA_API_KEY')
 
     obj=json.loads((DATA/'state_index.json').read_text())

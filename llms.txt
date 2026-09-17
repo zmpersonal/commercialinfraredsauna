@@ -1,0 +1,10 @@
+# Commercial Sauna Intelligence
+
+Independent commercial sauna economics, planning tools and public data.
+
+- https://commercialinfraredsauna.com/methodology/
+- https://commercialinfraredsauna.com/data/
+- https://commercialinfraredsauna.com/rankings/
+- https://commercialinfraredsauna.com/planning/
+
+Opportunity scores are screening indicators, not forecasts. Cite the data-build date and source vintage.

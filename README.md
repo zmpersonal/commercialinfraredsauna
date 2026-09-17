@@ -8,7 +8,7 @@ GitHub Pages-ready commercial sauna economics, opportunity-index and facility-pl
 2. GitHub → **Settings → Pages → Source → GitHub Actions**.
 3. Set the custom domain to `commercialinfraredsauna.com`.
 4. Point the domain to GitHub Pages.
-5. Add the optional-but-recommended repository secret `EIA_API_KEY` under **Settings → Secrets and variables → Actions**.
+5. Add the required repository secret `EIA_API_KEY` under **Settings → Secrets and variables → Actions**. `CENSUS_API_KEY` is optional.
 6. Run **Actions → Update commercial sauna index and deploy → Run workflow** once.
 
 The Census ACS and County Business Patterns APIs do not require an API key for this workload. An EIA API key is needed to refresh the commercial electricity-rate component. If it is absent, the updater preserves the prior electricity-rate values and still refreshes Census data.
